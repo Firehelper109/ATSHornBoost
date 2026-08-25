@@ -64,7 +64,7 @@ Suggested `normal_throttle` values for the Cascadia companion engines:
 
 The horn boost becomes much more noticeable with the companion Freightliner Cascadia engine pack. The Workshop package includes 10K, 25K and 50K N-m engines plus a deliberately absurd 1 trillion hp test engine.
 
-The Steam Workshop item can distribute the `.scs`/definition portion, but Workshop cannot install an SDK DLL into `bin\win_x64\plugins`. The DLL therefore has to be installed separately.
+The Steam Workshop item can distribute the normal ATS definition portion, but Workshop cannot install an SDK DLL into `bin\win_x64\plugins`. The DLL therefore has to be installed separately.
 
 ## Build
 
@@ -72,7 +72,15 @@ Requirements:
 
 - Windows x64
 - Visual Studio with Desktop development with C++
-- SCS Telemetry & Input SDK 1.14 headers
+- SCS Telemetry & Input SDK 1.14
+
+Download/extract the SCS SDK, then copy its `include` folder so the repository contains:
+
+```text
+third_party\scs_sdk\include\scssdk.h
+```
+
+The SDK headers are intentionally not committed to this repository. `third_party/scs_sdk/README.md` documents the expected location.
 
 Open `ATSHornBoost.sln`, choose **Release | x64**, then build.
 
@@ -101,8 +109,10 @@ ATSHornBoost registers an SCS semantic input device and supplies `aforward` as a
 
 Because the current implementation still uses ATS's normal drivetrain, gearing, RPM limits, traction and transmission behavior remain relevant. This is not direct rigid-body force or velocity injection.
 
-## Source and SDK
+## Releases
 
-The repository includes the SCS SDK headers used by the project together with SCS Software's SDK license. The SDK license permits redistribution provided its copyright and permission notice are retained.
+For public distribution, attach the compiled `ATSHornBoost.dll` and `ATSHornBoost.ini` to a GitHub Release ZIP. Users only need those runtime files, not Visual Studio build output.
 
-No separate license has yet been selected for the original ATSHornBoost source code.
+## License
+
+No separate license has yet been selected for the original ATSHornBoost source code. Until one is added, GitHub users can view the public source but do not automatically receive broad reuse/redistribution rights to the original code.
