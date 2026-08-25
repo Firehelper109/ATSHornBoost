@@ -115,4 +115,8 @@ For public distribution, attach the compiled `ATSHornBoost.dll` and `ATSHornBoos
 
 ## License
 
-No separate license has yet been selected for the original ATSHornBoost source code. Until one is added, GitHub users can view the public source but do not automatically receive broad reuse/redistribution rights to the original code.
+ATSHornBoost is released under the **MIT License**. You are free to use, copy, modify, merge, publish, distribute, sublicense, sell, fork, and build on the original ATSHornBoost code, including for commercial projects, as long as the MIT copyright and permission notice are retained.
+
+The intent is to make the project useful as an example of what can be built on top of the American Truck Simulator and SCS SDK framework, and to let other developers experiment with and extend it freely.
+
+See `LICENSE` for the full terms.
