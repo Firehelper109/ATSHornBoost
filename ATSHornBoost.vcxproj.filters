@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files"><UniqueIdentifier>{8A2148E9-11C1-4E45-B925-7B1B3C847A53}</UniqueIdentifier><Extensions>cpp;c</Extensions></Filter>
+    <Filter Include="Header Files"><UniqueIdentifier>{93995380-89BD-4B04-88EB-625FBE52EBFB}</UniqueIdentifier><Extensions>h;hpp</Extensions></Filter>
+    <Filter Include="Configuration"><UniqueIdentifier>{E116AA32-BE1D-4658-B0B7-7D6932231BC0}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ATSHornBoost.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\BoostBackend.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\Config.cpp"><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BoostBackend.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\Config.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PluginState.h"><Filter>Header Files</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ATSHornBoost.def"><Filter>Configuration</Filter></None>
+    <None Include="config\ATSHornBoost.ini"><Filter>Configuration</Filter></None>
+    <None Include="README.md" />
+    <None Include="third_party\scs_sdk\README.md" />
+  </ItemGroup>
+</Project>
